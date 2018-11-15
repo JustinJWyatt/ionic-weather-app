@@ -6,7 +6,7 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class WeatherProvider {
 
-  private apiKey: string = '786c83b86e5707c2f43374d466e94a2c';
+  private apiKey: string = 'some_api_key';
 
   private url: string;
 
