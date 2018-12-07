@@ -8,8 +8,8 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
   
-  weather: any;
-  city: string;
+  public weather: any;
+  public city: string;
 
   constructor(public navCtrl: NavController, public weatherProvider: WeatherProvider) {
 
@@ -18,7 +18,7 @@ export class HomePage {
   ionViewWillEnter(){
     this.city = "London";
     this.weatherProvider.getWeather(this.city).subscribe(weather => {
-      console.log(weather);
+      this.weather = weather;
     });
   }
 }

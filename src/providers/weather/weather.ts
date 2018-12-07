@@ -2,6 +2,7 @@ import { apiKey } from './../../../environment';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
+import { Observable } from 'rxjs/Observable';
 /*
   Generated class for the WeatherProvider provider.
 
@@ -11,13 +12,13 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class WeatherProvider {
 
-  private url: string = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}`;
+  private url: string = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&units=imperial`;
 
   constructor(public http: HttpClient) {
     console.log('Hello WeatherProvider Provider');
   }
 
-  getWeather(city: string){
+  getWeather(city: string): Observable<any>{
     return this.http.get(this.url + '&q=' + city).map(res => res);
   }
 
