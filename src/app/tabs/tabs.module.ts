@@ -10,6 +10,7 @@ import { TabsPage } from './tabs.page';
 import { Tab1PageModule } from '../tab1/tab1.module';
 import { Tab2PageModule } from '../tab2/tab2.module';
 import { Tab3PageModule } from '../tab3/tab3.module';
+import { SettingsPageModule } from '../settings/settings.module';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { Tab3PageModule } from '../tab3/tab3.module';
     TabsPageRoutingModule,
     Tab1PageModule,
     Tab2PageModule,
-    Tab3PageModule
+    Tab3PageModule,
+    SettingsPageModule
   ],
   declarations: [TabsPage]
 })

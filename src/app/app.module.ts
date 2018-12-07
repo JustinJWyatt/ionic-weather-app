@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { SettingsPage } from './settings/settings.page';
 
 @NgModule({
-  declarations: [AppComponent, SettingsPage],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
