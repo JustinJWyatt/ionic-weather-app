@@ -1,3 +1,4 @@
+import { AboutPage } from '../about/about.page';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -23,9 +24,9 @@ const routes: Routes = [
         component: Tab1Page
       },
       {
-        path: 'tab2',
-        outlet: 'tab2',
-        component: Tab2Page
+        path: 'about',
+        outlet: 'about',
+        component: AboutPage
       },
       {
         path: 'settings',

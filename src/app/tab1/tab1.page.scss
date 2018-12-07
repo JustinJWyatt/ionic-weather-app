@@ -1,4 +1,7 @@
-.welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
+@import "../../theme/variables";
+
+.home{
+    background: color($colors, primary);
+    color: color($colors, light);
+    margin-top: 30px;
 }

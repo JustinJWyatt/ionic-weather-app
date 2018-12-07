@@ -1,3 +1,4 @@
+import { AboutPageModule } from './../about/about.module';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -21,7 +22,8 @@ import { SettingsPageModule } from '../settings/settings.module';
     Tab1PageModule,
     Tab2PageModule,
     Tab3PageModule,
-    SettingsPageModule
+    SettingsPageModule,
+    AboutPageModule
   ],
   declarations: [TabsPage]
 })
